@@ -1,6 +1,16 @@
 # Testing Architecture Demo
 Demo for the workshop ["Softwarearchitektur automatisiert testen"](https://software-architecture-summit.de/softwarearchitektur/softwarearchitektur-automatisiert-testen/) at Software Architecture Summit 2019 in Berlin.
 
+##
+Used Software:
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Micrometer](https://micrometer.io)
+- [Dependabot](https://dependabot.com/)
+- [TravisCI](https://travis-ci.org/)
+- [Snyk.io](https://snyk.io/)
+- [Grafana](https://grafana.com/)
+- [Prometheus](https://prometheus.io/)
+
 
 ## Application
 
