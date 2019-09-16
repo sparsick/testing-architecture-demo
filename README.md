@@ -1,5 +1,6 @@
 # Testing Architecture Demo
 Demo for the workshop ["Softwarearchitektur automatisiert testen"](https://software-architecture-summit.de/softwarearchitektur/softwarearchitektur-automatisiert-testen/) at Software Architecture Summit 2019 in Berlin.
+Download [Slides](https://www.embarc.de/workshop-software-architektur-summit-2019-berlin/)
 
 ## Used Software
 - [Spring Boot](https://spring.io/projects/spring-boot)
