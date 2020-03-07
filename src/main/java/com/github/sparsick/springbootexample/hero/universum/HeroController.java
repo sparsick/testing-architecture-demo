@@ -23,7 +23,7 @@ public class HeroController {
 
     private Counter addCounter;
 
-    public HeroController(HeroRepository heroRepository, MeterRegistry meterRegistry) {
+    public HeroController(HeroRepositoryExperimentWrapper heroRepository, MeterRegistry meterRegistry) {
         this.heroRepository = heroRepository;
         this.searchCounter = meterRegistry.counter("hero.usage.search");
         this.addCounter = meterRegistry.counter("hero.usage.add");

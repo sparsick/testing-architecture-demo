@@ -1,13 +1,14 @@
 package com.github.sparsick.springbootexample.hero.universum;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
-//@Repository
+@Repository
 public class DuplicateHeroRepository implements HeroRepository {
 
     private List<Hero> heroes = new ArrayList<>();
