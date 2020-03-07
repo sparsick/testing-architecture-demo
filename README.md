@@ -1,6 +1,6 @@
 # Testing Architecture Demo
-Demo for the workshop ["Softwarearchitektur automatisiert testen"](https://software-architecture-summit.de/softwarearchitektur/softwarearchitektur-automatisiert-testen/) at Software Architecture Summit 2019 in Berlin.
-Download [Slides](https://www.embarc.de/workshop-software-architektur-summit-2019-berlin/)
+Demo for the workshop ["Die Wirksamkeit Eurer Architektur automatisiert testen"](https://software-architecture-summit.de/domain-driven-design/die-wirksamkeit-eurer-architektur-automatisiert-testen/) at Software Architecture Summit 2020 in Munich.
+Download [Slides]()
 
 ## Used Software
 - [Spring Boot](https://spring.io/projects/spring-boot)
@@ -10,6 +10,7 @@ Download [Slides](https://www.embarc.de/workshop-software-architektur-summit-201
 - [Snyk.io](https://snyk.io/)
 - [Grafana](https://grafana.com/)
 - [Prometheus](https://prometheus.io/)
+- [Scientist4J](https://github.com/rawls238/Scientist4J)
 
 
 ## Application
