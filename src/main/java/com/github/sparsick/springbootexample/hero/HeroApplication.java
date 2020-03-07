@@ -16,11 +16,4 @@ public class HeroApplication {
 		SpringApplication.run(HeroApplication.class, args);
 	}
 
-	@Bean
-    Map<String, HeroRepository> heroRepositoryFactory(Set<HeroRepository> heroRepositories){
-        Map<String, HeroRepository> heroRepositoryFactory = new HashMap<>();
-        heroRepositories.forEach(heroRepository -> heroRepositoryFactory.put(heroRepository.getName(), heroRepository));
-        return heroRepositoryFactory;
-    }
-
 }
