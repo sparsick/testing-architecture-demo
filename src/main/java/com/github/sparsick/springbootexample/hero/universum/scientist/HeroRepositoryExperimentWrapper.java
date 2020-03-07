@@ -1,5 +1,10 @@
-package com.github.sparsick.springbootexample.hero.universum;
+package com.github.sparsick.springbootexample.hero.universum.scientist;
 
+import com.github.sparsick.springbootexample.hero.universum.ComicUniversum;
+import com.github.sparsick.springbootexample.hero.universum.DuplicateHeroRepository;
+import com.github.sparsick.springbootexample.hero.universum.Hero;
+import com.github.sparsick.springbootexample.hero.universum.HeroRepository;
+import com.github.sparsick.springbootexample.hero.universum.UniqueHeroRepository;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.springframework.stereotype.Component;
 

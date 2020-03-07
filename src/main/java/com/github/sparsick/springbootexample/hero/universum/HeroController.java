@@ -1,5 +1,6 @@
 package com.github.sparsick.springbootexample.hero.universum;
 
+import com.github.sparsick.springbootexample.hero.universum.scientist.HeroRepositoryExperimentWrapper;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.apache.commons.lang3.StringUtils;

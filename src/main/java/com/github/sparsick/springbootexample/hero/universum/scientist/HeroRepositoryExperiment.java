@@ -1,14 +1,15 @@
-package com.github.sparsick.springbootexample.hero.universum;
+package com.github.sparsick.springbootexample.hero.universum.scientist;
 
 import com.github.rawls238.scientist4j.Experiment;
 import com.github.rawls238.scientist4j.Result;
+import com.github.sparsick.springbootexample.hero.universum.Hero;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 
 import java.util.Collection;
 import java.util.concurrent.atomic.AtomicLong;
 
-public class HeroRepositoryExperiment extends Experiment<Collection<Hero>> {
+class HeroRepositoryExperiment extends Experiment<Collection<Hero>> {
 
     private final AtomicLong controlDuration;
     private AtomicLong candidateDuration;
