@@ -44,10 +44,13 @@ Prometheus: http://localhost:9090
 ### Simulation Application Requests
 
 ```
-siege -c 100 http://localhost:8080/hero/list 
+# Performance
+siege -c 10 http://localhost:8080/hero
+siege -c 10 http://localhost:8080/hero/list
 
-siege -c 50 -u "http://localhost:8080/hero/new POST hero.name=wonderwoman&hero.city=London&hero.universum=MARVEL"
-siege -c 20 -u "http://localhost:8080/hero" 
+# Maintainbility
+siege -c 50 -u "http://localhost:8080/hero/new"
+siege -c 20 -u "http://localhost:8080/hero/list?search=Batman" 
 
 ```
 

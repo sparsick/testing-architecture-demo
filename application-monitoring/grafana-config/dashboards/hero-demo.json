@@ -28,33 +28,43 @@
       "id": 8,
       "links": [],
       "options": {
-        "maxValue": "0.5",
-        "minValue": 0,
+        "fieldOptions": {
+          "calcs": [
+            "mean"
+          ],
+          "defaults": {
+            "color": {
+              "mode": "thresholds"
+            },
+            "decimals": null,
+            "mappings": [],
+            "max": "0.5",
+            "min": 0,
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "index": 0,
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "index": 1,
+                  "value": 0.4
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": [],
+          "values": false
+        },
         "orientation": "auto",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true,
-        "thresholds": [
-          {
-            "color": "green",
-            "index": 0,
-            "value": null
-          },
-          {
-            "color": "red",
-            "index": 1,
-            "value": 0.4
-          }
-        ],
-        "valueMappings": [],
-        "valueOptions": {
-          "decimals": null,
-          "prefix": "",
-          "stat": "mean",
-          "suffix": "",
-          "unit": "none"
-        }
+        "showThresholdMarkers": true
       },
-      "pluginVersion": "6.1.4",
+      "pluginVersion": "6.6.2",
       "targets": [
         {
           "expr": "http_server_requests_seconds_max{uri=\"/hero\"}",
@@ -63,25 +73,27 @@
           "refId": "A"
         }
       ],
-      "timeFrom": "1m",
-      "timeShift": "1m",
+      "timeFrom": "30s",
+      "timeShift": "10s",
       "title": "Hero Search Request Time",
       "type": "gauge"
     },
     {
       "aliasColors": {},
-      "bars": true,
+      "bars": false,
       "dashLength": 10,
       "dashes": false,
       "datasource": "Prometheus",
       "description": "",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 8,
         "w": 12,
         "x": 12,
         "y": 0
       },
+      "hiddenSeries": false,
       "id": 2,
       "legend": {
         "alignAsTable": true,
@@ -94,10 +106,13 @@
         "total": false,
         "values": false
       },
-      "lines": false,
+      "lines": true,
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 2,
       "points": false,
@@ -173,12 +188,14 @@
       "datasource": "Prometheus",
       "description": "",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 8,
         "w": 12,
         "x": 0,
         "y": 8
       },
+      "hiddenSeries": false,
       "id": 6,
       "legend": {
         "avg": false,
@@ -193,6 +210,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 2,
       "points": false,
@@ -267,12 +287,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 8,
         "w": 12,
         "x": 12,
         "y": 8
       },
+      "hiddenSeries": false,
       "id": 4,
       "legend": {
         "avg": false,
@@ -287,6 +309,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 2,
       "points": false,
@@ -366,12 +391,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 8,
         "w": 12,
         "x": 0,
         "y": 16
       },
+      "hiddenSeries": false,
       "id": 10,
       "legend": {
         "avg": false,
@@ -386,6 +413,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 2,
       "points": false,
@@ -460,7 +490,7 @@
     }
   ],
   "refresh": "5s",
-  "schemaVersion": 18,
+  "schemaVersion": 22,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -499,5 +529,5 @@
   "timezone": "browser",
   "title": "Hero Demo",
   "uid": "IbeUOKSWk",
-  "version": 1
+  "version": 2
 }
