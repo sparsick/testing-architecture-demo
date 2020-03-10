@@ -6,6 +6,7 @@
     <title>Hero Demo</title>
 
     <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         <p>You find a new hero? Fill Expand database</p>
     </div>
     <div class="row">
-        <a role="button" class="btn btn-outline-secondary" th:href="@{/hero/new}">Add new hero</a>
+        <a role="button" class="btn btn-outline-secondary fas" th:href="@{/hero/new}">&#xf505; Add new hero</a>
     </div>
     <div class="row">
         <p> Data are coming from <span th:text="${ipAddress}"> xxx.xxx.xxx.xxx </span></p>
